@@ -1,0 +1,72 @@
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 100%; }
+}
+.fa {
+    margin: 20px 20px 20px 0;
+    color: #342C3E;
+}
+.fa:hover {
+    color: #fff;
+    box-shadow: #000;
+}
+.portfolioPic {
+    height: 260px;
+    width: 260px;
+    border-radius: 130px;
+    background: #EDAAA3;
+    border: 10px solid #B0797B;
+}
+.jumbotron {
+    text-align: center;
+    font-family: Didot;
+    color: white;
+    background-color: rgba(255,255,255, .3);
+}
+body {
+    background-image: url("img/jumpback.jpg");
+    background-size: 1100px;
+    background-position: center;
+    animation: animatedBackground 40s linear infinite;
+}
+.navbar {
+    font-family: "Arial Narrow";
+    background-color: rgba(150,161,122, .3);
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.navbar-form {
+    margin-top: 23px;
+}
+.title {
+    background: #C5B88C;
+    height: 150px;
+    width: 52%;
+    margin: auto;
+    border-radius: 15px;
+}
+.btn {
+    background-color: #342C3E;
+    border-color: #342C3E;
+    color: #fff;
+}
+.name {
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+.btn-port {
+    margin-top: 15px;
+    font-family: "Arial Narrow";
+}
+.btn-port:hover {
+    background-color: #fff;
+    color: #000;
+}
+.categ {
+    color: black;
+    margin: 0;
+}
+
