@@ -6,6 +6,14 @@ angular.module("myApp", ["ngRoute"])
                 templateUrl: "home/home.html",
                 controller: "homeController"
             })
+            .when("/skills", {
+                templateUrl: "skills/skills.html",
+                controller: "skillsController"
+            })
+            .when("/game", {
+                templateUrl: "game/game.html",
+                controller: "gameController"
+            })
             .otherwise({
                 redirectTo: "/home"
             });

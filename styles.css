@@ -1,6 +1,6 @@
 @keyframes animatedBackground {
-    from { background-position: 0 0; }
-    to { background-position: 100% 100%; }
+    0% { background-position: 0 0; }
+    100% { background-position: 4500px 0; }
 }
 .fa {
     margin: 20px 20px 20px 0;
@@ -21,13 +21,20 @@
     text-align: center;
     font-family: Didot;
     color: white;
-    background-color: rgba(255,255,255, .3);
+    background-color: rgba(255, 255, 255, 0);
 }
 body {
     background-image: url("img/jumpback.jpg");
-    background-size: 1100px;
+    background-size: 100%;
+}
+body:hover {
+    background-image: url("img/jumpback.jpg");
+    background-size: 100%;
     background-position: center;
-    animation: animatedBackground 40s linear infinite;
+    animation: animatedBackground 90s linear infinite;
+}
+.fa-5x {
+    font-size: 200px;
 }
 .navbar {
     font-family: "Arial Narrow";
@@ -68,5 +75,120 @@ body {
 .categ {
     color: black;
     margin: 0;
+}
+.htmlLogo {
+    height: 230px;
+    margin-top: 35px;
+}
+.csslogo {
+    height: 300px;
+    margin-left: 17px;
+}
+.jsLogo {
+    height: 240px;
+    margin-top: 27px;
+}
+.jquery {
+    height: 140px;
+    background-color: white;
+    border-radius: 70px;
+    margin-top: 75px;
+}
+.allskill {
+    background: rgba(255, 255, 255, .3);
+}
+.angLogo {
+    height: 250px;
+    margin-top: 31px;
+    margin-left: -30px;
+}
+.logo {
+    color: white;
+}
+.col-md-offset-0 {
+    margin-left: 23px;
+}
+.mongo {
+    width: 315px;
+    margin-top: 95px;
+    background-color: white;
+    border-radius: 70px;
+    border: 20px solid white;
+
+}
+.react {
+    height: 199px;
+    margin-top: 45px;
+    margin-left: 25px;
+}
+.nodejs {
+    width: 235px;
+    margin-top: 75px;
+    background-color: white;
+    border-radius: 80px;
+    border: 20px solid white;
+}
+.outerContainer {
+    width: 80%;
+    height: 650px;
+    position: relative;
+    background: olive;
+    margin: auto;
+}
+#draggableContainer {
+    width: 200px;
+    height: 630px;
+    position: relative;
+    float: left;
+    background: rgba(10,200,80,.5);
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#dropableContainer {
+    width: 600px;
+    height: 630px;
+    position: relative;
+    float: left;
+    background: rgba(10,200,80,.5);
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#scoreArea {
+     width: 200px;
+     height: 630px;
+     position: relative;
+     float: left;
+     background: rgba(10,200,80,.5);
+     margin-top: 10px;
+     border-radius: 10px;
+     margin-left: 5px;
+     overflow-x: hidden;
+     overflow-y: auto;
+ }
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 40px;
+    top: 20px;
+    background-position: 50% 50%;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+    .col-md-offset-1 {
+        margin-left: 5.333333%;
+    }
 }
 
