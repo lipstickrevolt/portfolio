@@ -1,14 +1,28 @@
 {{test}}
 <div class="outerContainer">
     <div id="draggableContainer">
-        <div ng-repeat="item in alldata">
-            <div dragme bgcolor="#000000" left="20" data-obejctname="{{item.objectname}}" answerData="{{item.objectname}}" backgroundimage="{{item.objectimg}}" myindex="$index"></div>
+        <div class="box" ng-repeat="item in dragableArray">
+            <div dragme bgcolor="#000000" left="20" data-objectname="{{item.objectname}}" answerdata="{{item.objectname}}" backgroundimage="{{item.objectimg}}" myindex="$index" set-spongebob="setSpongebobStatus(value)"></div>
+            <div class="bkgrndBox"></div>
         </div>
     </div>
     <div id="dropableContainer">
+        <div ng-repeat="item in droppableArray">
+            <div class="col-md-2 col-md-offset-1" dropme objectname="{{item.objectname}}" backgroundimage="{{item.objectimg}}" set-score="setScore(value)" remove-array="removeFromArray(value)" set-spongebob="setSpongebobStatus(value)"></div>
+
+        </div>
 
     </div>
     <div id="scoreArea">
+        <div id="scoreHeader">SCORE </div>
+        <div id="scoreText">{{score}} </div>
+        <div id="spongeBobArea" ng-switch on="spongeBobStatus">
+            <img class="pic" ng-switch-default src="img/SpongebobLying.png" alt="" />
+            <img class="pic" ng-switch-when="happy" src="img/HappySpongeBob.png" alt="" />
+            <img class="pic" ng-switch-when="tease" src="img/Spongebob_angry.png" alt="" />
+            <img class="pic" ng-switch-when="dragging" src="img/SpongeBob_RockPants.png" alt="" />
+            <img class="pic" ng-switch-when="finish" src="img/SpongeBob_Finish.png" alt="" />
 
+        </div>
     </div>
 </div>
